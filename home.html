@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!--gambar logo-->
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Product</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+
+    <section class="featured-section">
+        <style>
+            .featured-section {
+                position: relative;
+                text-align: center;
+                padding-top: 60px;
+            }
+            .circle {
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                width: 300px;
+                height: 300px;
+                background-color: #69704C;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            .featured-content {
+                position: relative;
+                z-index: 2;
+            }
+            .featured-text {
+                position: absolute;
+                top: 20px; 
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                text-align: center;
+            }
+            .featured-text h1 {
+                color: #4A4F38;
+                margin-bottom: 20px;
+            }
+            .featured-image {
+                margin-top: 150px; 
+            }
+        </style>
+        <div class="circle"></div>
+        <div class="featured-content">
+            <div class="featured-text">
+                <h1>Mau Terlihat Cerah Walaupun di Bawah Terik Matahari?</h1>
+                <button>Cek Sekarang</button>
+            </div>
+            <style>
+                .featured-image img {
+                    width: 500px;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            </style>
+            
+            <div class="featured-image">
+                <img src="asset/Home-pict.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-section">
+        <h2>Product Terbaik</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="path-to-product-image1" alt="Product 1">
+            </div>
+            <div class="product-item">
+                <img src="path-to-product-image2" alt="Product 2">
+            </div>
+            <div class="product-item">
+                <img src="path-to-product-image3" alt="Product 3">
+            </div>
+        </div>
+    </section> 
+
+    <section class="product-content-section">
+        <h2>Kandungan Product</h2>
+        <div class="content-boxes">
+            <div class="content-box"></div>
+            <div class="content-box"></div>
+        </div>
+    </section>
+</body>
+</html>

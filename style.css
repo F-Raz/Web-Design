@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+}
+
+header {
+  background-color: #6D7565;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.featured-section {
+  position: relative;
+  padding: 20px;
+  background-color: #DDE2CC;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background-color: #69704C;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.featured-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.featured-text h1 {
+  color: #4A4F38;
+  font-size: 1.5em;
+}
+
+.featured-text button {
+  background-color: #89A96D;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.featured-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #F4F4F4;
+}
+
+.product-section h2 {
+  color: #4A4F38;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.product-content-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #DDE2CC;
+}
+
+.product-content-section h2 {
+  color: #4A4F38;
+}
+
+.content-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content-box {
+  width: 150px;
+  height: 150px;
+  background-color: #E8EAD9;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Featured Section untuk mobile */
+  .featured-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .featured-text h1 {
+      font-size: 1.2em;
+  }
+  .featured-text button {
+      width: 100%;
+  }
+  .featured-image img {
+      max-width: 80%;
+      margin: 20px auto;
+  }
+
+  /* Navigasi untuk mobile */
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  nav ul li a {
+      padding: 10px;
+  }
+
+  /* Product Section untuk mobile */
+  .product-list {
+      flex-direction: column;
+      gap: 20px;
+  }
+  .product-item img {
+      width: 80px;
+      height: 80px;
+  }
+
+  /* Content Section untuk mobile */
+  .content-boxes {
+      flex-direction: column;
+  }
+  .content-box {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Gaya tambahan untuk layar yang lebih kecil */
+  nav ul li a {
+      font-size: 0.9em;
+  }
+
+  .featured-text h1 {
+      font-size: 1em;
+  }
+
+  .featured-text button {
+      padding: 8px;
+  }
+
+  .product-item img {
+      width: 60px;
+      height: 60px;
+  }
+}
