@@ -9,92 +9,95 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <!--gambar logo-->
+            <div class="logo-container">
+                <img src="asset/ZIF.png" alt="ZIF Logo" class="logo">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="#">Tips</a></li>
                 <li><a href="#">Product</a></li>
             </ul>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
-            </div>
-        </nav>
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="search-options">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+        </nav>                                 
     </header>
 
     <section class="featured-section">
-        <style>
-            .featured-section {
-                position: relative;
-                text-align: center;
-                padding-top: 60px;
-            }
-            .circle {
-                position: absolute;
-                top: -50px;
-                left: -50px;
-                width: 300px;
-                height: 300px;
-                background-color: #69704C;
-                border-radius: 50%;
-                z-index: 1;
-            }
-            .featured-content {
-                position: relative;
-                z-index: 2;
-            }
-            .featured-text {
-                position: absolute;
-                top: 20px; 
-                left: 50%;
-                transform: translateX(-50%);
-                width: 100%;
-                text-align: center;
-            }
-            .featured-text h1 {
-                color: #4A4F38;
-                margin-bottom: 20px;
-            }
-            .featured-image {
-                margin-top: 150px; 
-            }
-        </style>
-        <div class="circle"></div>
+        <div class="circle-left"></div>
+        <div class="circle-right"></div>
         <div class="featured-content">
             <div class="featured-text">
                 <h1>Mau Terlihat Cerah Walaupun di Bawah Terik Matahari?</h1>
-                <button>Cek Sekarang</button>
             </div>
-            <style>
-                .featured-image img {
-                    width: 500px;
-                    height: 300px;
-                    object-fit: cover;
-                    object-position: center;
-                }
-            </style>
-            
             <div class="featured-image">
-                <img src="asset/Home-pict.png" alt="Hero Image">
+                <img src="asset/Home-pict.png" alt="Featured Image">
             </div>
+        </div>
+    </section>
+
+    <section id="slider-section">
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="asset/Kulit berminyak.jpg" alt="Image 1">
+                    <div class="text-box">
+                        <h2>Slide 1 Title</h2>
+                        <p>This is the description for slide 1.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="asset/Kulit kering.jpg" alt="Image 2">
+                    <div class="text-box">
+                        <h2>Slide 2 Title</h2>
+                        <p>This is the description for slide 2.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="asset/Kulit normal.jpg" alt="Image 3">
+                    <div class="text-box">
+                        <h2>Slide 3 Title</h2>
+                        <p>This is the description for slide 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
         </div>
     </section>
     
     <section class="product-section">
         <h2>Product Terbaik</h2>
-        <div class="product-list">
+        <div class="product-rectangle">
+          <div class="product-list">
             <div class="product-item">
-                <img src="path-to-product-image1" alt="Product 1">
+              <img src="product1.jpg" alt="Product 1">
+              <h3>Product 1</h3>
+              <p>Description of Product 1</p>
             </div>
             <div class="product-item">
-                <img src="path-to-product-image2" alt="Product 2">
+              <img src="product2.jpg" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>Description of Product 2</p>
             </div>
             <div class="product-item">
-                <img src="path-to-product-image3" alt="Product 3">
+              <img src="product3.jpg" alt="Product 3">
+              <h3>Product 3</h3>
+              <p>Description of Product 3</p>
             </div>
+          </div>
         </div>
-    </section> 
+    </section>
+    <script src="script.js"></script>
 
     <section class="product-content-section">
         <h2>Kandungan Product</h2>
